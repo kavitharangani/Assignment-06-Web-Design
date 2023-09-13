@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,POS System,kavindya">
+    <meta name="description" content="My personal idea">
+    <meta name="revised" content="Customer page, 12/09/2023">
+    <meta name="author" content="Kavindya Tharangani">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Customer Form</title>
+    <link href="../CSS/main_page.css" rel="stylesheet">
+</head>
+<body>
+<section class="content-section" id="manage_customer">
+    <h1 class="title">
+        Customers <i class='bx bx-user-plus'></i>
+    </h1>
+    <hr style="color: black; border: 1px solid black; width: 100%">
+    <div class="container">
+        <div class="left_sub_container">
+            <h2> Manage Customer Form</h2>
+            <hr style="border: 1px solid black; width: 100%">
+
+            <form class="description_form" id="customer_form">
+                <div class="form-group">
+                    <label for="txt_customer_id">Customer ID</label>
+                    <input class="form-control" id="txt_customer_id" name='customerId' placeholder="C001" required
+                           type="text">
+                </div>
+                <div class="form-group">
+                    <label for="txt_customer_name">Name</label>
+                    <input class="form-control" id="txt_customer_name" name='customerName'
+                           placeholder="Kavi" required type="text">
+                </div>
+                <div class="form-group">
+                    <label for="txt_customer_address">Address</label>
+                    <input class="form-control" id="txt_customer_address" name='customerAddress' placeholder="Panadura"
+                           required type="text">
+                </div>
+                <div class="form-group">
+                    <label for="txt_customer_salary">Salary</label>
+                    <input class="form-control" id="txt_customer_salary" name='customrSalary' placeholder="25000.00"
+                           required type="text">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" id="btn_save_customer" type="submit">Save</button>
+                    <button class="btn btn-primary" id="btn_update_customer">Update</button>
+                    <button class="btn btn-primary" id="btn_delete_customer">Delete</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="right_sub_container">
+            <div class="search_section">
+                <label for="search_customer"></label>
+                <input class="form-control" id="search_customer" name='search' placeholder="C001"
+                       required type="text">
+                <button class="btn btn-primary clear" id="#clear_customer">clear</button>
+            </div>
+            <table class="table table-hover" id="customer_tbl">
+                <thead>
+                <tr>
+                    <th class="customer-id" scope="col">Id</th>
+                    <th class="customer-name" scope="col">Name</th>
+                    <th class="customer-address" scope="col">Email</th>
+                    <th class="customer-salary" scope="col">Salary</th>
+                </tr>
+                </thead>
+                <tbody id="customer_table_body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+</body>
+</html>

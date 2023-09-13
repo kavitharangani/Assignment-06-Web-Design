@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,POS System,kavindya">
+    <meta name="description" content="My personal idea">
+    <meta name="revised" content="Order page, 12/09/2023">
+    <meta name="author" content="Kavindya Tharangani">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body>
+<section class="content-section" id="manage_order">
+    <h1 class="title">
+        Place Order <i class='bx bx-cookie'></i>
+    </h1>
+    <hr style="color: white; border: 1px solid black; width: 100%">
+    <div class="container" id="order_container">
+        <div id="orders_left_container">
+            <h1 style="color: #FFA41B; padding-left: 38px">New Order</h1>
+            <img alt="image" src="../assest/img/plce%20order.jpg">
+            <form>
+                <div class="form-group">
+                    <label for="txt_order_id">Order ID</label>
+                    <input class="form-control" id="txt_order_id" name='order_id' placeholder="O001" required
+                           type="text">
+                </div>
+                <div class="form-group">
+                    <label for="cmbCustomers">Customers</label>
+                    <select class="form-control" id="cmbCustomers">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="customer_name">Name </label>
+                    <h3 class=" " id="customer_name">
+                        Shan Perera
+                    </h3>
+                </div>
+            </form>
+        </div>
+        <div id="orders_right_container">
+            <h5>Date : <span id="date">2023-07-01</span></h5>
+            <div id="right_container_top">
+                <form>
+                    <div class="form-group">
+                        <label for="cmbItem">Item</label>
+                        <select class="form-control" id="cmbItem">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="i_description">Description</label>
+                        <h4 class="form-control" id="i_description"
+                            type="text">-</h4>
+                    </div>
+                    <div class="form-group">
+                        <label for="i_price">Unit Price</label>
+                        <h4 class="form-control" id="i_price"
+                            type="text">-</h4>
+                    </div>
+                    <div class="form-group">
+                        <label for="i_qtyOnHand">Qty on hand</label>
+                        <h4 class="form-control" id="i_qtyOnHand"
+                            type="text">-</h4>
+                    </div>
+
+                </form>
+                <div id="addcart">
+                    <div class="form-group">
+                        <div style="width: 30%;">
+                            <!--                            <label for="qty">Qty on hand</label>-->
+                            <input class="form-control" id="qty"
+                                   placeholder="enter qty" required type="number">
+                        </div>
+                        <div class="form-group" id="btns">
+                            <button class="btn btn-primary" id="btn_addtocart">Cart</button>
+                            <button class="btn btn-primary" id="btn_remove">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right_container_bottom">
+                <table class="table table-hover" id="cart">
+                    <thead>
+                    <tr>
+                        <th class="order-item-code" scope="col">Item Code</th>
+                        <th class="order-item-description" scope="col">Description</th>
+                        <th class="order-item-qty" scope="col">Qty</th>
+                        <th class="order-item-price" scope="col">Price</th>
+                        <th class="order-item-total" scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody id="cart_body">
+                    </tbody>
+                </table>
+            </div>
+            <div class="btns">
+                <h2 id="total">Total:Rs&nbsp;<span id="total_price">0.00</span></h2>
+                <button class="btn btn-primary" id="btn_place_order">Place Order</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

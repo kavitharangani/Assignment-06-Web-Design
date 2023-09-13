@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,POS System,kavindya">
+    <meta name="description" content="My personal idea">
+    <meta name="revised" content="Home page, 12/09/2023">
+    <meta name="author" content="Kavindya Tharangani">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Home Form</title>
+    <link href="../CSS/main_page.css" rel="stylesheet">
+    <link href="../CSS/menu_section.css" rel="stylesheet">
+    <link href="../assest/css/normalize.css" rel="stylesheet">
+</head>
+<body>
+<section class="main-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="../assest/img/home.png" height="50">
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-target="#navbarNav" data-toggle="collapse" type="button">
+            <span class="navbar-toggle-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" id="home" onclick="navigate('home')">
+                        <img src="../assest/img/Home icon.png"/>
+                        Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick=navigate('manage_customer')>
+                        <img src="../assest/img/customer icon.png"/>
+                        Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick=navigate('manage_item')>
+                        <img src="../assest/img/item icon.png"/>
+                        Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick=navigate('manage_order')>
+                        <img src="../assest/img/order icon.png"/>
+                        Orders</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+<section id="menu-section">
+    <div class="left_container">
+        <div id="title">E-Mark
+            <p style="font-size: 20px;letter-spacing: 14px ">Go Mother With Onlinebuying.</p>
+        </div>
+        <div>
+            <img alt="shop" src="../assest/img/home%20main.jpg">
+        </div>
+        <p></p>
+    </div>
+    <div class="right_container">
+        <div class="btnList">
+            <div id="customer">
+                Customer
+                <img alt="customer" src="../assest/img/customer.jpg">
+            </div>
+            <div id="item">Item
+                <img alt="item" src="../assest/img/item.jpg"></div>
+            <div id="order">Order
+                <img alt="order" src="../assest/img/orders.jpg">
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
