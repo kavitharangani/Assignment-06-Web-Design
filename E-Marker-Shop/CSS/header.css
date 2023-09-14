@@ -1,0 +1,90 @@
+body{
+    background: linear-gradient(176deg,rgb(243,130,239,100%),rgb(251,202,242,100%),white);
+    overflow-x: hidden;
+    width: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+/*header{*/
+/*    width: 100vw;*/
+/*    height: 70px;*/
+/*    background-color: plum;*/
+/*    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+/*    position: relative;*/
+/*}*/
+
+/*nav>center{*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*}*/
+
+/*nav>center>h2{*/
+/*    color: black;*/
+/*    list-style-type: none;*/
+/*    margin: 2px 20px;*/
+/*    opacity: 0;*/
+/*    transform: translateY(-25px);*/
+/*    animation: animation 3s linear forwards;*/
+/*}*/
+
+
+/*nav>center{*/
+/*    position: relative;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*}*/
+
+/*.nav-item {*/
+/*    display: inline;*/
+/*    margin: 70px 120px;*/
+/*}*/
+/*.nav-item >a{*/
+/*    font-size: 18px;*/
+/*    display: inline-block;*/
+
+/*}*/
+
+header{
+    width: 100vw;
+    height: 5vw;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#cartimg{
+    height: 60px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+header>nav>ol{
+    list-style-type: none;
+    display:flex;
+}
+header>nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+header>nav>ol>li{
+    margin: 5px 50px;
+    font-weight: lighter;
+    font-size: 20px;
+    position: relative;
+    bottom: 3px;
+}
+li>img{
+    height: 50px;
+    margin: 1px 10px;
+    position: relative;
+}
+li>button{
+    width: 150px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 20px;
+    background-color: white;
+}

@@ -1,0 +1,17 @@
+#manage_item {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    /*background: url("../assets/images/img3.png");*/
+    background-repeat: round;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+.circle1 {
+    display: none;
+
+}
+
+#manage_item h1 {
+
+}
