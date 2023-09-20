@@ -8,65 +8,119 @@
     <meta name="author" content="Kavindya Tharangani">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Customer Form</title>
-    <link href="../CSS/main_page.css" rel="stylesheet">
+    <link href="../CSS/customer.css" rel="stylesheet">
+    <link href="../CSS/header other.css" rel="stylesheet">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+
 </head>
 <body>
+<header>
+    <img id="cartimg" src="../assets/img/home.png" alt="logo">
+    <nav>
+        <ol>
+            <li><img src="../assets/img/Home%20icon.png" alt=""><button><a href="Home_Section.html">Home</a></button></li>
+            <li><img src="../assets/img/customer%20icon.png" alt=""><button><a href="Customer_Section.html">Customer</a></button></li>
+            <li><img src="../assets/img/item%20icon.png" alt=""><button><a href="Item_Section.html">Item</a></button></li>
+            <li><img src="../assets/img/order%20icon.png" alt=""><button><a href="Order_Section.html">Order</a></button></li>
+
+
+        </ol>
+    </nav>
+</header>
 <section class="content-section" id="manage_customer">
-    <h1 class="title">
-        Customers <i class='bx bx-user-plus'></i>
+    <h1 class="main">
+        Customer Manage <i class='bx bx-user-plus'></i>
     </h1>
     <hr style="color: black; border: 1px solid black; width: 100%">
-    <div class="container">
-        <div class="left_sub_container">
-            <h2> Manage Customer Form</h2>
-            <hr style="border: 1px solid black; width: 100%">
 
-            <form class="description_form" id="customer_form">
-                <div class="form-group">
-                    <label for="txt_customer_id">Customer ID</label>
-                    <input class="form-control" id="txt_customer_id" name='customerId' placeholder="C001" required
-                           type="text">
+    <div class="row">
+        <h1 class="title" style="font-size: 30px ; font-style: italic">
+            Add Form Customer <i class='bx bx-user-plus'></i>
+        </h1>
+        <hr style="color: black; border: 1px solid black; width: 100% ">
+
+        <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="data">
+            <form>
+                <br>
+                <div class="mb-3">
+                    <label for="id" class="form-label">Customer Id</label><br>
+                    <input class="form-control-input" id="id" type="text" required>
+
                 </div>
-                <div class="form-group">
-                    <label for="txt_customer_name">Name</label>
-                    <input class="form-control" id="txt_customer_name" name='customerName'
-                           placeholder="Kavi" required type="text">
+                <div class="mb-3">
+                    <label class="form-label" for="name">Customer Name</label><br>
+                    <input id="name" class="form-control-input" type="text" required>
+
                 </div>
-                <div class="form-group">
-                    <label for="txt_customer_address">Address</label>
-                    <input class="form-control" id="txt_customer_address" name='customerAddress' placeholder="Panadura"
-                           required type="text">
+                <div class="mb-3">
+                    <label class="form-label" for="address">Customer Address</label><br>
+                    <input id="address" class="form-control-input" type="text" required>
+
                 </div>
-                <div class="form-group">
-                    <label for="txt_customer_salary">Salary</label>
-                    <input class="form-control" id="txt_customer_salary" name='customrSalary' placeholder="25000.00"
-                           required type="text">
+                <div class="mb-3">
+                    <label class="form-label" for="email">Customer E-mail</label><br>
+                    <input id="email" class="form-control-input" type="email" required>
+
                 </div>
-                <div class="form-group">
-                    <button class="btn btn-primary" id="btn_save_customer" type="submit">Save</button>
-                    <button class="btn btn-primary" id="btn_update_customer">Update</button>
-                    <button class="btn btn-primary" id="btn_delete_customer">Delete</button>
+                <div class="mb-3">
+                    <label class="form-label" for="phone">Contact Number</label><br>
+                    <input id="phone" class="form-control-input" type="text" required>
+
+                </div>
+                <div class="btn">
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="reset" class="btn btn-warning">Clear</button>
                 </div>
             </form>
-
         </div>
-        <div class="right_sub_container">
-            <div class="search_section">
-                <label for="search_customer"></label>
-                <input class="form-control" id="search_customer" name='search' placeholder="C001"
-                       required type="text">
-                <button class="btn btn-primary clear" id="#clear_customer">clear</button>
-            </div>
-            <table class="table table-hover" id="customer_tbl">
-                <thead>
+
+
+        <div class="col col-xl-6 col-lg-6  col-md-6 col-sm-12 col-12" id="tabel">
+            <table class="table mt-5" border="5px">
+                <br><br>
+                            <div class="search_section">
+                                <button class="btn btn-primary clear" id="#search">search</button>
+                                <br>
+                                <label for="search_customer"></label>
+                                <input class="form-control" id="search_customer" name='search' placeholder="C001"
+                                       required type="text">
+                                </div>
+<section id="ta">
+<thead>
                 <tr>
-                    <th class="customer-id" scope="col">Id</th>
-                    <th class="customer-name" scope="col">Name</th>
-                    <th class="customer-address" scope="col">Email</th>
-                    <th class="customer-salary" scope="col">Salary</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Contact</th>
                 </tr>
                 </thead>
-                <tbody id="customer_table_body">
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Japan</td>
+                    <td>GDSE</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>Australia</td>
+                    <td>DEP</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td >Larry </td>
+                    <td >Bird </td>
+                    <td>Italic</td>
+                    <td>GDSE</td>
+                </tr>
+</section>
                 </tbody>
             </table>
         </div>

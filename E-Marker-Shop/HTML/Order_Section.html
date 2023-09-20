@@ -9,9 +9,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Order Form</title>
     <link rel="stylesheet" href="../CSS/order.css">
-    <link href="../assest/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../CSS/header other.css" rel="stylesheet">
+
 </head>
 <body>
+<header>
+    <img id="cartimg" src="../assets/img/home.png" alt="logo">
+    <nav>
+        <ol>
+            <li><img src="../assets/img/Home%20icon.png" alt=""><button>Home</button></li>
+            <li><img src="../assets/img/customer%20icon.png" alt=""><button>Customer</button></li>
+            <li><img src="../assets/img/item%20icon.png" alt=""><button>Item</button></li>
+            <li><img src="../assets/img/order%20icon.png" alt=""><button>Order</button></li>
+
+        </ol>
+    </nav>
+</header>
 <section class="content-section" id="manage_order">
     <h1 class="title">
         Place Order <i class='bx bx-cookie'></i>
@@ -20,7 +34,7 @@
     <div class="container" id="order_container">
         <div id="orders_left_container">
             <h1 style="color: #FFA41B; padding-left: 38px">New Order</h1>
-            <img alt="image" src="../assest/img/plce%20order.jpg">
+<!--            <img alt="image" src="../assest/img/plce%20order.jpg">-->
             <form>
                 <div class="form-group">
                     <label for="txt_order_id">Order ID</label>
@@ -35,7 +49,7 @@
                 <div class="form-group">
                     <label for="customer_name">Name </label>
                     <h3 class=" " id="customer_name">
-                        Shan Perera
+                        Kavi
                     </h3>
                 </div>
             </form>
@@ -102,6 +116,7 @@
         </div>
     </div>
 </section>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>

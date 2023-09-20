@@ -10,63 +10,30 @@
     <title>Home Form</title>
     <link href="../CSS/header.css" rel="stylesheet">
     <link href="../CSS/home.css" rel="stylesheet">
-    <link href="../assest/css/normalize.css" rel="stylesheet">
+    <link href="../assets/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+
 </head>
 <body>
 <header>
-    <img id="cartimg" src="../assest/img/home.png" alt="logo">
+    <img id="cartimg" src="../assets/img/home.png" alt="logo">
     <nav>
         <ol>
-            <li><img src="../assest/img/Home%20icon.png" alt=""><button>Home</button></li>
-            <li><img src="../assest/img/customer%20icon.png" alt=""><button>Customer</button></li>
-            <li><img src="../assest/img/item%20icon.png" alt=""><button>Item</button></li>
-            <li><img src="../assest/img/order%20icon.png" alt=""><button>Order</button></li>
+            <li><img src="../assets/img/Home%20icon.png" alt=""><button><a href="Home_Section.html">Home</a></button></li>
+            <li><img src="../assets/img/customer%20icon.png" alt=""><button><a href="Customer_Section.html">Customer</a></button></li>
+            <li><img src="../assets/img/item%20icon.png" alt=""><button><a href="Item_Section.html">Item</a></button></li>
+            <li><img src="../assets/img/order%20icon.png" alt=""><button><a href="Order_Section.html">Order</a></button></li>
 
         </ol>
     </nav>
 </header>
-<!--<section class="main-section">-->
-<!--    <header>-->
-<!--    <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
-<!--        <img src="../assest/img/home.png" height="50">-->
-<!--        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"-->
-<!--                data-target="#navbarNav" data-toggle="collapse" type="button">-->
-<!--            <span class="navbar-toggle-icon"></span>-->
-<!--        </button>-->
-<!--        <div class="collapse navbar-collapse" id="navbarNav">-->
-<!--            <ul class="navbar-nav">-->
-<!--                <li class="nav-item active">-->
-<!--                    <a class="nav-link" id="home" onclick="navigate('home')">-->
-<!--                        <img src="../assest/img/Home icon.png"/>-->
-<!--                        Home</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" onclick=navigate('manage_customer')>-->
-<!--                        <img src="../assest/img/customer icon.png"/>-->
-<!--                        Customer</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" onclick=navigate('manage_item')>-->
-<!--                        <img src="../assest/img/item icon.png"/>-->
-<!--                        Item</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" onclick=navigate('manage_order')>-->
-<!--                        <img src="../assest/img/order icon.png"/>-->
-<!--                        Orders</a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </nav>-->
-<!--    </header>-->
-<!--</section>-->
 <section id="menu-section">
     <div class="left_container">
         <div id="title">E-Mark
             <p style="font-size: 20px;letter-spacing: 14px ">Go Mother With Onlinebuying.</p>
         </div>
         <div>
-            <img alt="shop" src="../assest/img/home%20main.jpg">
+            <img class="image" alt="shop" src="../assets/img/home%20main.jpg">
         </div>
         <p></p>
     </div>
@@ -74,15 +41,17 @@
         <div class="btnList">
             <div id="customer">
                 Customer
-                <img alt="customer" src="../assest/img/customer.jpg">
+                <img alt="customer" src="../assets/img/customer.jpg">
             </div>
             <div id="item">Item
-                <img alt="item" src="../assest/img/item.jpg"></div>
+                <img alt="item" src="../assets/img/item.jpg"></div>
             <div id="order">Order
-                <img alt="order" src="../assest/img/orders.jpg">
+                <img alt="order" src="../assets/img/orders.jpg">
             </div>
         </div>
     </div>
 </section>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>
