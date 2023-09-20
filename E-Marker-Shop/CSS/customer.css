@@ -52,8 +52,8 @@ form>div>label{
     font-family: "Times New Roman";
     position: relative;
     left: 70px;
-    font-style: italic ;
-    font-weight: 900;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 
@@ -76,5 +76,14 @@ form>div>input{
 }
 #search{
     position: absolute;
-    left: 500px;
+    top:72px;
+    left: 450px;
+    display: flex;
 }
+.search_section #search_Customer{
+    width: 28vw;
+    height: fit-content;
+    position: absolute;
+}
+
+

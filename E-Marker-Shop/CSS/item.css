@@ -11,7 +11,7 @@ body{
     position: absolute;
     left: 100px;
     background: linear-gradient(176deg,rgb(217,217,217,100%),white);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
     width: 90%;
     height: content-box;
@@ -52,7 +52,7 @@ form>div>label{
     font-family: "Times New Roman";
     position: relative;
     left: 70px;
-    font-style: italic ;
+    font-size: 25px;
     font-weight: 900;
 }
 
@@ -76,5 +76,15 @@ form>div>input{
 }
 #search{
     position: absolute;
-    left: 500px;
+    top:72px;
+    left: 450px;
+    display: flex;
 }
+.search_section #search_item{
+    width: 28vw;
+    height: fit-content;
+    position: absolute;
+}
+
+
+
