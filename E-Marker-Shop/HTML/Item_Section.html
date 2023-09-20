@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="HTML,POS System,kavindya">
     <meta name="description" content="My personal idea">
-    <meta name="revised" content="Item page, 12/09/2023">
+    <meta name="revised" content="Customer page, 12/09/2023">
     <meta name="author" content="Kavindya Tharangani">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Item Form</title>
+    <title>Customer Form</title>
     <link href="../CSS/item.css" rel="stylesheet">
-    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../CSS/header other.css" rel="stylesheet">
-    <link href="../assets/css/normalize.css" rel="stylesheet">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
 
 </head>
@@ -25,74 +24,97 @@
             <li><img src="../assets/img/item%20icon.png" alt=""><button><a href="Item_Section.html">Item</a></button></li>
             <li><img src="../assets/img/order%20icon.png" alt=""><button><a href="Order_Section.html">Order</a></button></li>
 
+
         </ol>
     </nav>
 </header>
-<section class="content-section" id="manage_item">
-    <h1 class="title">
-        Item <i class='bx bx-cookie'></i>
+<section class="content-section" id="manage_customer">
+    <h1 class="main">
+        Customer Manage <i class='bx bx-user-plus'></i>
     </h1>
-    <hr style="color: white; border: 1px solid black; width: 100%">
+    <hr style="color: black; border: 1px solid black; width: 100%">
 
-    <div class="container">
-        <div class="left_sub_container">
-            <div class="circle1"></div>
-            <h2> Manage Item Form</h2>
-            <hr style="color: black; border: 1px solid black; width: 100%">
+    <div class="row">
+        <h1 class="title" style="font-size: 30px ; font-style: italic">
+            Add Form Item <i class='bx bx-user-plus'></i>
+        </h1>
+        <hr style="color: black; border: 1px solid black; width: 100% ">
 
-            <form class="description_form" id="item_form">
-                <div class="form-group">
-                    <label for="item_code">Item ID</label>
-                    <input class="form-control" id="item_code" name='item_id' placeholder="I001" required
-                           type="text">
+        <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="data">
+            <form>
+                <br>
+                <div class="mb-3">
+                    <label for="id" class="form-label">Item Code</label><br>
+                    <input class="form-control-input" id="id" type="text" required>
+
                 </div>
-                <div class="form-group">
-                    <label for="item_description">Item Description</label>
-                    <input class="form-control" id="item_description" name='item_description'
-                           placeholder="Rice" required type="text">
+                <div class="mb-3">
+                    <label for="id" class="form-label">Item Code</label><br>
+                    <input id="description" class="form-control-input" type="text" required>
                 </div>
-                <div class="form-group">
-                    <label for="item_price">Price</label>
-                    <input class="form-control" id="item_price" name='item_price' placeholder="1250.00"
-                           required type="number">
+                <div class="mb-3">
+                    <label class="form-label" for="price">Item Price</label><br>
+                    <input id="price" class="form-control-input" type="number" required>
                 </div>
-                <div class="form-group">
-                    <label for="item_qty">Qty on Hand</label>
-                    <input class="form-control" id="item_qty" name='item_qty' placeholder="100"
-                           required type="number">
+                <div class="mb-3">
+                    <label class="form-label" for="qty">Item Qty</label><br>
+                    <input id="qty" class="form-control-input" type="number" required>
+
                 </div>
-                <div class="form-group">
-                    <button class="btn btn-primary" id="item_save" type="submit">Save</button>
-                    <button class="btn btn-primary" id="item_update">Update</button>
-                    <button class="btn btn-primary" id="item_delete">Delete</button>
+
+                <div class="btn">
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="reset" class="btn btn-warning">Clear</button>
                 </div>
             </form>
         </div>
-        <div class="right_sub_container">
-            <div class="search_section">
-                <label for="search_item"></label>
-                <input class="form-control" id="search_item" name='search' placeholder="I001"
-                       required type="text">
-                <button class="btn btn-primary clear" id="#clear_item">clear</button>
-            </div>
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th class="item-code" scope="col">Code</th>
-                    <th class="item-description" scope="col">Description</th>
-                    <th class="item-price" scope="col">Price</th>
-                    <th class="item-qty" scope="col">Qty on hand</th>
-                </tr>
-                </thead>
-                <tbody id="item_table_body">
+
+
+        <div class="col col-xl-6 col-lg-6  col-md-6 col-sm-12 col-12" id="tabel">
+            <table class="table mt-5" border="5px">
+                <br><br>
+                <div class="search_section">
+                    <button class="btn btn-primary clear" id="#search">search</button>
+                    <br>
+                    <label for="search_item"></label>
+                    <input class="form-control" id="search_item" name='search' placeholder="I001"
+                           required type="text">
+                </div>
+                <section id="ta">
+                    <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Unit Price</th>
+                        <th scope="col">Qty</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>Japan</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Australia</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td >Larry </td>
+                        <td >Bird </td>
+                        <td>Italic</td>
+                    </tr>
+                </section>
                 </tbody>
             </table>
         </div>
     </div>
 </section>
-
-<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-
-
 </body>
 </html>

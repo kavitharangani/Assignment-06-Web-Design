@@ -49,17 +49,18 @@ body{
 }
 
 form>div>label{
+    font-family: "Times New Roman";
     position: relative;
     left: 70px;
     font-style: italic ;
-    font-weight: 80;
+    font-weight: 900;
 }
 
 
 form>div>input{
     position: relative;
     left: 120px;
-    background: linear-gradient(176deg,rgb(181,171,241,100%),rgb(177,165,248,0%));
+    background: linear-gradient(176deg,rgb(217,217,217,100%),white);
 
 }
 
