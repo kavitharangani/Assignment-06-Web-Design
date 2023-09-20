@@ -1,11 +1,20 @@
-#manage_order {
-    /*border: 2px solid black;*/
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
-    /*background: url("../assets/images/img2.png");*/
-    background-repeat: round;
-    background-blend-mode: darken;
-    background-attachment: fixed;
-
+body{
+    background: linear-gradient(176deg,rgb(243,130,239,100%),rgb(251,202,242,100%),white);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+#section{
+    position: absolute;
+    left: 100px;
+    background: linear-gradient(176deg,rgb(217,217,217,100%),white);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    width: 90%;
+    height: content-box;
+    display: flex;
 }
 
 #order_container {
@@ -15,10 +24,12 @@
 
 }
 
-#orders_left_container {
+#orders_left_container , #orders_right_container {
+    margin-bottom: 15px;
+    margin-top: 15px;
     border-radius: 32px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
-    /*border: 1px solid black;*/
+    background: white;
     width: 30%;
     left: 10px;
     padding: 10px;
@@ -39,15 +50,15 @@
 #right_container_top {
     width: 100%;
     height: 26%;
-    /*border: 1px solid blue;*/
+
 
 }
 
 #right_container_bottom {
-border-bottom: 1px solid gray;
+    border-bottom: 1px solid gray;
     width: 100%;
     height: 50%;
-    /*border: 2px solid black;*/
+
 }
 
 .btns {
@@ -55,9 +66,18 @@ border-bottom: 1px solid gray;
     align-items: flex-end;
     align-self: end;
     width: 60%;
-    /*border: 2px solid black;*/
+    margin-left: 50px;
     justify-content: space-around;
 
+}
+
+#customer_name{
+    font-family: "Times New Roman";
+    position: relative;
+    left: 60px;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 #btn_place_order {
@@ -65,11 +85,14 @@ border-bottom: 1px solid gray;
     align-self: flex-end;
     right: 0;
     height: 100%;
-/important;
+
 }
 
-#orders_left_container img {
-    height: 60%;
+#orders_left_container >h1{
+    position: relative;
+    left: 70px;
+    font-size: 35px;
+    font-style: italic;
 }
 
 #right_container_top form {
@@ -77,13 +100,12 @@ border-bottom: 1px solid gray;
     align-items: end;
     justify-content: space-around;
     flex-direction: row;
-    /*border: 2px solid red;*/
     height: 55%;
+    margin-left: 5px;
 }
 
 #right_container_top .form-group {
-    /*border: 2px solid blue;*/
-    width: 25em;
+    width: 30em;
 }
 
 
@@ -100,8 +122,8 @@ h5 {
     padding-right: 40px;
 }
 
-#btn_addtocart, #btn_remove {;
-    /*font-size: 14px;*/
+#btn_addtocart, #btn_remove {
+    margin-left: 10px;
     color: white;
     background-color: #0d6efd;
 }
@@ -129,9 +151,15 @@ h5 {
 #right_container_bottom table th{
     color: #fd7e12;
 }
-
-/*
- * created by Shan Perera
- * 5/7/2023
- */
-
+form>div>label{
+    font-family: "Times New Roman";
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#btn{
+    position: relative;
+    left: 50px;
+    margin-left: 10px;
+}

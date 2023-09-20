@@ -8,60 +8,73 @@
     <meta name="author" content="Kavindya Tharangani">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Order Form</title>
-    <link rel="stylesheet" href="../CSS/order.css">
-    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../CSS/order.css" rel="stylesheet">
     <link href="../CSS/header other.css" rel="stylesheet">
-
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
 <header>
     <img id="cartimg" src="../assets/img/home.png" alt="logo">
     <nav>
         <ol>
-            <li><img src="../assets/img/Home%20icon.png" alt=""><button>Home</button></li>
-            <li><img src="../assets/img/customer%20icon.png" alt=""><button>Customer</button></li>
-            <li><img src="../assets/img/item%20icon.png" alt=""><button>Item</button></li>
-            <li><img src="../assets/img/order%20icon.png" alt=""><button>Order</button></li>
+            <li><img src="../assets/img/Home%20icon.png" alt=""><button><a href="Home_Section.html">Home</a></button></li>
+            <li><img src="../assets/img/customer%20icon.png" alt=""><button><a href="Customer_Section.html">Customer</a></button></li>
+            <li><img src="../assets/img/item%20icon.png" alt=""><button><a href="Item_Section.html">Item</a></button></li>
+            <li><img src="../assets/img/order%20icon.png" alt=""><button><a href="Order_Section.html">Order</a></button></li>
+
 
         </ol>
     </nav>
 </header>
+
 <section class="content-section" id="manage_order">
     <h1 class="title">
         Place Order <i class='bx bx-cookie'></i>
     </h1>
     <hr style="color: white; border: 1px solid black; width: 100%">
+    <section id="section">
     <div class="container" id="order_container">
         <div id="orders_left_container">
-            <h1 style="color: #FFA41B; padding-left: 38px">New Order</h1>
-<!--            <img alt="image" src="../assest/img/plce%20order.jpg">-->
+            <h1 >New Order</h1>
+            <hr style="color: black; border: 1px solid black; width: 100% ">
+            <br>
             <form>
                 <div class="form-group">
-                    <label for="txt_order_id">Order ID</label>
+                    <label for="txt_order_id">Order ID</label><br><br>
                     <input class="form-control" id="txt_order_id" name='order_id' placeholder="O001" required
-                           type="text">
+                           type="text"><br>
                 </div>
                 <div class="form-group">
-                    <label for="cmbCustomers">Customers</label>
+                    <label for="cmbCustomers">Customer ID</label><br><br>
                     <select class="form-control" id="cmbCustomers">
                     </select>
+                    <br>
                 </div>
                 <div class="form-group">
-                    <label for="customer_name">Name </label>
+                    <label for="customer_name">Name </label><br><br>
                     <h3 class=" " id="customer_name">
-                        Kavi
+                        kavi
                     </h3>
                 </div>
+                <br><br>
+                <div class="btn">
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="reset" class="btn btn-warning">Clear</button>
+                </div>
+                <img src="../assets/img/orders.jpg" alt="" width="50px" >
             </form>
         </div>
         <div id="orders_right_container">
             <h5>Date : <span id="date">2023-07-01</span></h5>
+            <br><br>
             <div id="right_container_top">
                 <form>
                     <div class="form-group">
-                        <label for="cmbItem">Item</label>
-                        <select class="form-control" id="cmbItem">
-                        </select>
+                        <label for="i_description">Item</label>
+                        <h4 class="form-control" id="i_item"
+                            type="text">-</h4>
                     </div>
                     <div class="form-group">
                         <label for="i_description">Description</label>
@@ -83,11 +96,10 @@
                 <div id="addcart">
                     <div class="form-group">
                         <div style="width: 30%;">
-                            <!--                            <label for="qty">Qty on hand</label>-->
                             <input class="form-control" id="qty"
                                    placeholder="enter qty" required type="number">
                         </div>
-                        <div class="form-group" id="btns">
+                        <div class="form-group" id="side">
                             <button class="btn btn-primary" id="btn_addtocart">Cart</button>
                             <button class="btn btn-primary" id="btn_remove">Remove</button>
                         </div>
@@ -97,6 +109,7 @@
             <div id="right_container_bottom">
                 <table class="table table-hover" id="cart">
                     <thead>
+                    <br>
                     <tr>
                         <th class="order-item-code" scope="col">Item Code</th>
                         <th class="order-item-description" scope="col">Description</th>
@@ -104,17 +117,41 @@
                         <th class="order-item-price" scope="col">Price</th>
                         <th class="order-item-total" scope="col">Total</th>
                     </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>Japan</td>
+                        <td>GDSE</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Australia</td>
+                        <td>DEP</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td >Larry </td>
+                        <td >Bird </td>
+                        <td>Italic</td>
+                        <td>GDSE</td>
+                    </tr>
                     </thead>
                     <tbody id="cart_body">
                     </tbody>
                 </table>
             </div>
+            <br>
             <div class="btns">
                 <h2 id="total">Total:Rs&nbsp;<span id="total_price">0.00</span></h2>
                 <button class="btn btn-primary" id="btn_place_order">Place Order</button>
             </div>
+            <br><br>
         </div>
     </div>
+</section>
 </section>
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 
