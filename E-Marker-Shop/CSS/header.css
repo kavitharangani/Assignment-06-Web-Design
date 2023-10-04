@@ -1,92 +1,95 @@
+/*header{*/
+/*    width: 100vw;*/
+/*    height: 3vw;*/
+/*    position: relative;*/
+/*    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+/*}*/
+
+/*#cartimg{*/
+/*    height: 70px;*/
+/*    position: relative;*/
+/*    top: 10px;*/
+/*    left: 10px;*/
+/*}*/
+
+/*header>nav>ol{*/
+/*    list-style-type: none;*/
+/*    display:flex;*/
+/*}*/
+/*header>nav{*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*}*/
+
+/*header>nav>ol>li{*/
+/*    margin: 5px 50px;*/
+/*    font-size: 23px;*/
+/*    font-weight: bold;*/
+/*    position: relative;*/
+/*    bottom: 3px;*/
+/*}*/
+
+
+/*li>img{*/
+/*    height: 50px;*/
+/*    margin: 1px 10px;*/
+/*    position: relative;*/
+/*}*/
+
+
+/*header>nav>div>a{*/
+/*    font-weight: bold;*/
+/*    width: 150px;*/
+/*    border-radius: 20px;*/
+/*    position: relative;*/
+/*    bottom: 20px;*/
+/*    background-color: white;*/
+/*}*/
+
 body{
     background: linear-gradient(176deg,rgb(243,130,239,100%),rgb(251,202,242,100%),white);
-    overflow-x: hidden;
-    overflow-y: hidden;
     width: 100%;
-    aspect-ratio: 1/1;
+    min-height: 100vh;
     position: relative;
 }
 
-header{
-    width: 100vw;
-    height: 5vw;
-    position: relative;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+header {
+    background: linear-gradient(176deg,rgb(243,130,239,100%),plum);
+    padding: 10px 0;
 }
-@media all and (max-width: 900px) {
-    header{
-        width: 100vw;
-        height: 10vw;
-    }
+.navbar {
+    background-color: #333;
+    color: plum;
 }
 
-#cartimg{
-    height: 70px;
-    position: relative;
-    top: 10px;
-    left: 10px;
-}
-@media all and (max-width: 900px) {
-    #cartimg{
-        position: absolute;
-        left: 20px;
-        top: 10px;
-        height: 45px;
-    }
+.navbar-brand {
+    color: white;
+    font-size: 24px;
 }
 
-header>nav>ol{
-    list-style-type: none;
-    display:flex;
-}
-header>nav{
-    position: absolute;
-    right: 0;
-    top: 0;
+.navbar-nav a {
+    color: white;
+    margin-right: 20px;
 }
 
-header>nav>ol>li{
-    margin: 5px 50px;
-    font-size: 23px;
+.navbar-nav img {
+    width: 59px;
+    margin-right: 6px;
+}
+
+.navbar-nav .active {
     font-weight: bold;
-    position: relative;
-    bottom: 3px;
 }
-@media all and (max-width: 900px) {
-    header>nav>ol>li{
-        position: relative;
-        bottom: 3px;
-        font-size: 15px;
-        font-weight: bold;
-    }
+header>nav>.container-fluid>img{
+    margin-left: 300px;
 }
-
-li>img{
-    height: 50px;
-    margin: 1px 10px;
-    position: relative;
+.cus{
+    margin-left: 150px;
 }
-@media all and (max-width: 900px) {
-    li>img{
-        height: 30px;
-    }
+.item{
+    margin-left: 160px;
 }
-
-li>button{
-    font-weight: bold;
-    width: 150px;
-    border-radius: 20px;
-    position: relative;
-    bottom: 20px;
-    background-color: white;
+.order{
+    margin-left: 170px;
 }
-@media all and (max-width: 900px) {
-    li>button{
-        border-radius: 5px;
-        position: relative;
-        bottom: 10px;
-        width: 10vw;
-
-    }
-}
-

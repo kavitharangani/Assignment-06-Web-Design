@@ -1,8 +1,7 @@
 body{
     background: linear-gradient(176deg,rgb(243,130,239,100%),rgb(251,202,242,100%),white);
-    overflow-x: hidden;
     width: 100%;
-    aspect-ratio: 1/1;
+    min-height: 100vh;
     position: relative;
 }
 

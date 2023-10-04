@@ -16,6 +16,10 @@ body{
     width: 90%;
     height: content-box;
     display: flex;
+
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: auto;*/
 }
 
 #data{
@@ -46,14 +50,6 @@ body{
 .row{
     margin-top: 0;
 
-}
-
-form>div>label{
-    font-family: "Times New Roman";
-    position: relative;
-    left: 70px;
-    font-size: 20px;
-    font-weight: 700;
 }
 
 
