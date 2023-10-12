@@ -51,26 +51,30 @@
             <hr style="color: black; border: 1px solid black; width: 100% ">
             <br>
             <form>
-                <div class="form-group">
-                    <label for="txt_order_id">Order ID</label><br><br>
-                    <input class="form-control" id="txt_order_id" name='order_id' placeholder="O001" required
-                           type="text"><br>
+                <div class="col-md-4">
+                    <label for="order_Id" class="form-label">Order ID</label>
+                    <input type="text" class="form-control" id="order_Id" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="cmbCustomers">Customer ID</label><br><br>
-                    <select class="form-control" id="cmbCustomers">
-                    </select>
-                    <br>
+                <div class="col-md-4">
+                    <label for="customer_Id" class="form-label">Customer ID</label>
+                    <input type="text" class="form-control" id="customer_Id" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="customer_name">Name </label><br><br>
-                    <h3 class=" " id="customer_name">
-                        kavi
-                    </h3>
+                <div class="col-md-4">
+                    <label for="item_code" class="form-label">Item Code</label>
+                    <input type="text" class="form-control" id="item_code" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
                 </div>
                 <br><br>
                 <div class="btn">
-                    <button type="submit" class="btn btn-success" id="save">Save</button>
+                    <button type="submit" class="btn btn-success" id="save">Submit</button>
                     <button type="button" class="btn btn-primary" id="update">Update</button>
                     <button type="button" class="btn btn-danger" id="remove">Delete</button>
                     <button type="reset" class="btn btn-warning" id="reset">Clear</button>
@@ -83,37 +87,34 @@
             <br><br>
             <div id="right_container_top">
                 <form>
-                    <div class="form-group">
-                        <label for="i_description">Item</label>
-                        <h4 class="form-control" id="i_item"
-                            type="text">-</h4>
+                    <div class="col-md-4">
+                        <label for="item_description" class="form-label">Item Description</label>
+                        <input type="text" class="form-control" id="item_description" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="i_description">Description</label>
-                        <h4 class="form-control" id="i_description"
-                            type="text">-</h4>
-                    </div>
-                    <div class="form-group">
-                        <label for="i_price">Unit Price</label>
-                        <h4 class="form-control" id="i_price"
-                            type="text">-</h4>
-                    </div>
-                    <div class="form-group">
-                        <label for="i_qtyOnHand">Qty on hand</label>
-                        <h4 class="form-control" id="i_qtyOnHand"
-                            type="text">-</h4>
+                    <div class="col-md-4">
+                        <label for="item_name" class="form-label">Item Name</label>
+                        <input type="text" class="form-control" id="item_name" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                     </div>
 
+                    <div class="col-md-4">
+                        <label for="item_price" class="form-label">Unit Price</label>
+                        <input type="text" class="form-control" id="item_price" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
                 </form>
                 <div id="addcart">
                     <div class="form-group">
                         <div style="width: 30%;">
                             <input class="form-control" id="qty"
                                    placeholder="enter qty" required type="number">
-                        </div>
-                        <div class="form-group" id="side">
-                            <button class="btn btn-primary" id="btn_addtocart">Cart</button>
-                            <button class="btn btn-primary" id="btn_remove">Remove</button>
                         </div>
                     </div>
                 </div>
@@ -123,35 +124,25 @@
                     <thead>
                     <br>
                     <tr>
-                        <th class="order-item-code" scope="col">Item Code</th>
-                        <th class="order-item-description" scope="col">Description</th>
-                        <th class="order-item-qty" scope="col">Price</th>
-                        <th class="order-item-price" scope="col">Qty</th>
-                        <th class="order-item-total" scope="col">Total</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>Japan</td>
-                        <td>GDSE</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>Australia</td>
-                        <td>DEP</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td >Larry </td>
-                        <td >Bird </td>
-                        <td>Italic</td>
-                        <td>GDSE</td>
+                        <th scope="col"> Order ID</th>
+                        <th scope="col">Customer ID</th>
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Item Description</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Unit Price</th>
+                        <th scope="col">Qty</th>
                     </tr>
                     </thead>
                     <tbody id="cart_body">
+                    <tr>
+                        <td scope="row">O001</td>
+                        <td>C001</td>
+                        <td>I001</td>
+                        <td>soap</td>
+                        <td>velvat</td>
+                        <td>90</td>
+                        <td>12</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -165,32 +156,93 @@
     </div>
 </section>
 </section>
+
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 
 <script>
-    //submit
-    $(document).ready(function () {
-        $("#submit").on("click", function () {
-            // Get item details from the form
-            let itemCode = $("#item_Code").val();
-            let itemName = $("#item_Name").val();
-            let qty = $("#i_qtyOnHand").val();
-            let itemPrice = $("#item_Price").val();
+    $("#submit").on('click', ()=>{
+        let orderId =$('#order_Id').val();
+        let customerId =$('#customer_Id').val();
+        let itemCode=$('#item_Code').val();
+        let itemDescription=$('#item_description').val();
+        let itemName=$('#item_Name').val();
+        let unitPrice=$('#item_Price').val();
+        let qty=$('#qty').val();
 
-            // Create a new table row
-            var newRow = $("<tr>");
-            newRow.append("<td>" + itemCode + "</td>");
-            newRow.append("<td>" + itemName + "</td>");
-            newRow.append("<td>" + qty + "</td>");
-            newRow.append("<td>" + itemPrice + "</td>");
+        console.log('Order ID: ' + orderId);
+        console.log('Customer ID: ' + customerId);
+        console.log('itemCode: ' + itemCode);
+        console.log('itemDescription: ' + itemDescription);
+        console.log('itemName: ' + itemName);
+        console.log('unitPrice: ' + unitPrice);
+        console.log('qty: ' + qty);
 
-            // Append the new row to the table
-            $("#item_table_body").append(newRow);
 
-            // Reset form fields
-            $("#item_form")[0].reset();
-        });
+        var newRow = $("<tr>");
+
+        newRow.append("<td>" + orderId + "</td>");
+        newRow.append("<td>" + customerId + "</td>");
+        newRow.append("<td>" + itemCode + "</td>");
+        newRow.append("<td>" + itemDescription + "</td>");
+        newRow.append("<td>" + itemName + "</td>");
+        newRow.append("<td>" + unitPrice + "</td>");
+        newRow.append("<td>" + qty + "</td>");
+
+        $("#cart_body").append(newRow);
+
+    })
+
+    // update
+    $("#update").on('click', ()=>{
+        let customerId =$('#customer_Id').val();
+        let customerName=$('#customer_Name').val();
+        let customerAddress=$('#customer_Address').val();
+        let customerContact=$('#customer_Contact').val();
+
+        let record = `<td class="Customer ID:">${customerId}</td><td class="Customer Name:">${customerName}</td> <td class="Customer Address:">${customerAddress}</td><td class="Customer Contact:">${customerContact}</td>`;
+
+        $("tbody>tr").eq(row_index).html(record)
+    })
+
+
+    //Delete
+    $("#remove").on('click', () => {
+
+        $("tbody>tr").eq(row_index).remove();
+    })
+
+
+    //reset
+    $("#reset").on('click', () => {
+        // my code
+        $('#customer_Id').val('');
+        $('#customer_Name').val('');
+        $('#customer_Address').val('');
+        $('#customer_Contact').val('');
+
+    })
+
+    //click
+    $("tbody").on("click", "tr", function () {
+        row_index =$(this).index();
+
+        let orderId = $(this).find("td:eq(0)").text();
+        let customerId = $(this).find("td:eq(1)").text();
+        let itemCode = $(this).find("td:eq(2)").text();
+        let itemDescription = $(this).find("td:eq(3)").text();
+        let itemName = $(this).find("td:eq(4)").text();
+        let unitPrice = $(this).find("td:eq(5)").text();
+        let qty = $(this).find("td:eq(6)").text();
+
+        $('#order_Id').val(orderId);
+        $('#customer_Id').val(customerId);
+        $('#item_Code').val(itemCode);
+        $('#item_description').val(itemDescription);
+        $('#item_Name').val(itemName);
+        $('#item_Price').val(unitPrice);
+        $('#qty').val(qty);
     });
+
 
 </script>
 </body>

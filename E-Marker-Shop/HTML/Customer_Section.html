@@ -209,30 +209,27 @@
 
 
 
-    // $("#search").on('click', "tr", function (){
-    //     let customerId = $("#search-input").val();
-    //
-    //     $('#customer_Id').val(customerId);
-    //
-    //     // let customerId = $(this).find("td:eq(0)").text();
-    //     let customerName = $(this).find("td:eq(1)").text();
-    //     let customerAddress = $(this).find("td:eq(2)").text();
-    //     let customerContact = $(this).find("td:eq(3)").text();
-    //
-    //     $('#customer_Id').val(customerId);
-    //     $('#customer_Name').val(customerName);
-    //     $('#customer_Address').val(customerAddress);
-    //     $('#customer_Contact').val(customerContact);
-    // })
+    $("#search").on('click', function (){
+        let customerId = $("#search-input").val();
+
+        $('#customer_Id').val(customerId);
+
+        // let customerId = $(this).find("td:eq(0)").text();
+        let customerName = $(this).find("td:eq(1)").text();
+        let customerAddress = $(this).find("td:eq(2)").text();
+        let customerContact = $(this).find("td:eq(3)").text();
+
+        $('#customer_Id').val(customerId);
+        $('#customer_Name').val(customerName);
+        $('#customer_Address').val(customerAddress);
+        $('#customer_Contact').val(customerContact);
+    })
 
 
     // $("#search-button").click(function() {
-    //     // Get the customer ID from the input field
     //     let customerId = $("#search-input").val();
     //     $('#customer_Id').val(customerId);
-    //     // Simulate a customer search (replace with your actual search logic)
-    //     // For demonstration, we'll assume a static data object
-    //     // Update the text fields with the search results
+    //
     //     $('#customer_Id').val(customerId);
     //     $('#customer_Name').val(customerName);
     //     $('#customer_Address').val(customerAddress);
